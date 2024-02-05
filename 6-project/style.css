@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("fonts/vazir.eot"), url("fonts/vazir.ttf") format("truetype"),
+    url("fonts/vazir.woff2") format("woff2"),
+    url("fonts/vazir.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  direction: rtl;
+  font-family: "Vazir";
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  background-color: #13035b;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+header h2 {
+  font-size: 35px;
+  color: #fff;
+}
+
+header p {
+  color: #f9f9f9;
+  width: 900px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.content {
+  width: 900px;
+  margin: 50px auto;
+  font-size: 17px;
+}
+
+.sidebar {
+  height: 100vh;
+  position: absolute;
+  left: -130px;
+  top: 0;
+  background-color: #312892;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  -moz-transition: all .4s ease-in-out;
+  -ms-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+}
+
+.sidebar.active{
+  left: 0;
+}
+
+.sidebar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: cover;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 50px auto;
+  width: 100%;
+}
+
+.sidebar ul li {
+  text-align: center;
+  border-bottom: 1px solid #616161;
+  border-top: 1px solid #616161;
+}
+
+.sidebar ul li:hover {
+  background-color: #3b21ac;
+}
+
+.sidebar ul li a {
+  padding: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.sidebar .btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: -40px;
+  background-color: #312892;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar .btn i {
+  color: #fff;
+  font-size: 20px;
+}

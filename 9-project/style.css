@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("fonts/vazir.eot"), url("fonts/vazir.ttf") format("truetype"),
+    url("fonts/vazir.woff2") format("woff2"),
+    url("fonts/vazir.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+body {
+  direction: rtl;
+  font-family: "Vazir";
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section .box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+section .box .img-box {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section .box .img-box img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+section .box .img-box.active {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+section .box .img-box.active img {
+  width: calc(100% - 100px);
+  height: calc(100% - 100px);
+  top: 50px;
+  right: 50px;
+  left: 50px;
+  bottom: 50px;
+}
+
+section .box .img-box h2 {
+  opacity: 0;
+}
+
+section .box .img-box.active h2 {
+  opacity: 1;
+  visibility: visible;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+section .box .img-box .content {
+  position: absolute;
+  bottom: 7%;
+  left: 50px;
+  right: 50px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+  -moz-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -o-transform: translateY(100px);
+}
+
+section .box .img-box.active .content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transition: all .3s ease-in-out;
+
+}
+
+section .box .img-box .content h3 {
+  font-size: 20px;
+}

@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("fonts/vazir.eot"), url("fonts/vazir.ttf") format("truetype"),
+    url("fonts/vazir.woff2") format("woff2"),
+    url("fonts/vazir.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "vazir";
+}
+
+body {
+  direction: rtl;
+  font-family: "Vazir";
+  height: 100vh;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0259aa;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  list-style: none;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header nav .logo {
+  font-style: 25px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  letter-spacing: 4px;
+}
+
+.content {
+  width: 100%;
+}
+
+.content .content-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.content .content-box .img-box {
+  width: 50%;
+}
+
+.content .content-box .img-box img {
+  width: 100%;
+}
+
+.content .content-box .text-box {
+  width: 90%;
+}
+
+.content .content-box .text-box h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 3.2rem;
+}
+
+.content .content-box .text-box h2 span {
+  color: #0ac752;
+}
+
+.content .content-box .text-box p {
+  line-height: 25px;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.content .content-box .text-box a {
+  text-decoration: none;
+  background-color: #0ac752;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.thumb {
+  list-style: none;
+  position: absolute;
+  bottom: 50px;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+}
+
+.thumb li {
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+.thumb li img {
+  width: 150px;
+}
+
+.social {
+  position: absolute;
+  right: 30px;
+  list-style: none;
+}
+
+.social a {
+  font-size: 25px;
+  color: #fff;
+}

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("fonts/vazir.eot"), url("fonts/vazir.ttf") format("truetype"),
+    url("fonts/vazir.woff2") format("woff2"),
+    url("fonts/vazir.woff") format("woff");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: "vazir";
+}
+
+body {
+  direction: rtl;
+  font-family: "Vazir";
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.filled-order {
+  width: 400px;
+  position: relative;
+}
+
+.filled-order .filled {
+  width: 100%;
+}
+
+.filled-order .filled textarea {
+  width: 100%;
+  height: 200px;
+  border: 5px solid #999;
+  padding: 10px;
+  font-family: "vazir";
+  resize: none;
+}
+
+.filled-order #textearea-remaining{
+  position: absolute;
+  left: -10px;
+  bottom: 10px;
+  color: #999;
+}
